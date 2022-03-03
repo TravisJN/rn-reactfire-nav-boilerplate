@@ -22,8 +22,15 @@ expo init my-project
    Some dependencies have native components that need to be installed via Expo
 
    react-navigation:
-   `expo install react-native-screens react-native-safe-area-context @react-native-masked-view/masked-view`
+
+   ```
+   expo install react-native-screens react-native-safe-area-context @react-native-masked-view/masked-view
+   ```
 
    Expo:
-   `expo install expo-constants`
+
+   ```
+   expo install expo-constants
+   ```
+
    Note: expo-constants is used to determine if we are using local firebase emulators. There are other ways to check environment variables such as using `process.ENV` if you prefer.
