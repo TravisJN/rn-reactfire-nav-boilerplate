@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
 export default function Home({ navigation }) {
   const auth = useAuth();
 
-  const handleSignOut = () => {
-    auth.signOut().then(() => console.log('signed out'));
+  const handleSignOut = async () => {
+    await auth.signOut();
   };
 
   return (
