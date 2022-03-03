@@ -20,6 +20,11 @@ const styles = StyleSheet.create({
     fontSize: 28,
     color: '#363636',
     paddingBottom: 10,
+    paddingTop: 10,
+  },
+  button: {
+    borderWidth: 1,
+    padding: 5,
   },
 });
 
@@ -32,12 +37,12 @@ export default function Home({ navigation }) {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-      <Text style={styles.titleText}>yeetship</Text>
+      <Text style={styles.titleText}>Home</Text>
       <View style={styles.authenticationContainer}>
         <Text>welcome home</Text>
       </View>
-      <Pressable onPress={handleSignOut}>
-        <Text>Good Bye</Text>
+      <Pressable style={styles.button} onPress={handleSignOut}>
+        <Text>Sign Out</Text>
       </Pressable>
     </ScrollView>
   );

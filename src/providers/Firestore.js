@@ -1,12 +1,7 @@
 import * as React from 'react';
 import { Text } from 'react-native';
 import { FirestoreProvider, useInitFirestore } from 'reactfire';
-import {
-  initializeFirestore,
-  enableIndexedDbPersistence,
-  connectFirestoreEmulator,
-  getFirestore,
-} from 'firebase/firestore';
+import { initializeFirestore, enableIndexedDbPersistence, connectFirestoreEmulator } from 'firebase/firestore';
 import Constants from 'expo-constants';
 
 export const Firestore = ({ children }) => {
